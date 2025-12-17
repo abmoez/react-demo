@@ -1,0 +1,60 @@
+/* ============================================
+   Input Styles
+   ============================================ */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-group__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.input-group__input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group__input::placeholder {
+  color: var(--text-muted);
+}
+
+.input-group__input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.input-group--error .input-group__input {
+  border-color: #ef4444;
+}
+
+.input-group--error .input-group__input:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.input-group__error {
+  font-size: 0.85rem;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.input-group__helper {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+

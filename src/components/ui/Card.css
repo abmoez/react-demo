@@ -1,0 +1,68 @@
+/* ============================================
+   Card Styles
+   ============================================ */
+
+.card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Variants */
+.card--default {
+  border: 1px solid var(--border-color);
+}
+
+.card--elevated {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card--outlined {
+  border: 2px solid var(--border-color);
+  background: transparent;
+}
+
+/* States */
+.card--hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card--clickable {
+  cursor: pointer;
+}
+
+.card--clickable:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Sub-components */
+.card__header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.card__body {
+  padding: 1.5rem;
+}
+
+.card__footer {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.card__description {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
